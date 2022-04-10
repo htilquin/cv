@@ -49,12 +49,6 @@ div.Flex.between {
     background-color: white;
 }
 
-header {
-    color : #ffffff;
-    font-size: 27px;
-    font-variant-caps: petite-caps;
-}
-
 .page {
     width: 210mm;
     min-height: 297mm;
@@ -152,13 +146,16 @@ a {
 h1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    color : #ffffff;
+    font-size: 50px;
+    font-variant-caps: petite-caps;
 }
 
 h1.poste {
     color: #ffffff;
     font-variant-caps: all-petite-caps;
-    font-weight: normal;
-    font-size: 23px;
+    font-weight: 500;
+    font-size: large;
 }
 
 h2 {
