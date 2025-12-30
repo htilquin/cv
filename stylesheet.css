@@ -1,7 +1,7 @@
 body {
     position: relative;
     font-family: 'Exo', sans-serif;
-    font-size : 13px;
+    font-size: 13px;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -21,31 +21,33 @@ div.Flex {
 div.Flex.between {
     justify-content: space-between;
 }
-  
-.flex { /*Flexbox for containers*/
+
+.flex {
+    /*Flexbox for containers*/
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-  
+
 .waves {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 1vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    margin-top : -5mm;
-    margin-left : -5mm;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    margin-top: -5mm;
+    margin-left: -5mm;
 }
 
-.waves > svg {
+.waves>svg {
     border-top-left-radius: 5px;
 }
-  
+
 .content {
-    position:relative;
-    height:20vh;
-    text-align:center;
+    position: relative;
+    height: 20vh;
+    text-align: center;
     background-color: white;
 }
 
@@ -59,17 +61,18 @@ div.Flex.between {
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .subpage {
     height: 287mm;
     z-index: 1;
-    position : relative;
-    padding-top : 1mm;
+    position: relative;
+    padding-top: 1mm;
 }
 
 div.left {
     padding-right: 10px;
     margin-right: 10px;
-    margin-top: auto;
+    margin-top: 15px;
     width: 530px;
     flex-shrink: 0.8;
 }
@@ -79,7 +82,7 @@ div.logo {
     flex-shrink: 0;
     text-align: center;
     margin-bottom: 10px;
-    margin-top : 3px;
+    margin-top: 3px;
 }
 
 div.icons {
@@ -118,7 +121,7 @@ ul {
 }
 
 div.comp {
-    width: 64px;
+    width: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,8 +133,19 @@ div.wrap {
     justify-content: space-between;
 }
 
+div.wrap.onleft {
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-left: 30px;
+    /* justify-content: space-between; */
+}
+
+div.flexing {
+    padding: 5px;
+}
+
 .filler {
-    height: 160px;
+    height: 120px;
 }
 
 /***************
@@ -146,7 +160,7 @@ a {
 h1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color : #ffffff;
+    color: #ffffff;
     font-size: 50px;
     font-variant-caps: petite-caps;
 }
@@ -161,7 +175,7 @@ h1.poste {
 h2 {
     font-size: 17px;
     width: 100%;
-    color : #224488;
+    color: #224488;
     padding: 7px 10px 5px 10px;
     border-bottom: #224488 solid 3px;
     font-variant-caps: small-caps;
@@ -170,10 +184,10 @@ h2 {
 
 div.right h2 {
     text-align: right;
-} 
+}
 
 h3 {
-    color : #002060;
+    color: #002060;
     margin-bottom: 0;
     font-size: 13px;
 }
@@ -188,13 +202,13 @@ h4 {
     font-weight: bold;
     color: #224488;
     margin-bottom: 6px;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 h4.light {
-    color : white;
+    color: white;
 }
 
 .smaller {
@@ -208,20 +222,20 @@ h4.light {
 
 p {
     margin: 0;
-    margin-top : 3px;
+    margin-top: 3px;
 }
 
 .blue {
-    color : #002060;
+    color: #002060;
 }
 
 .lightblue {
-    color : #c5c9ff;
+    color: #c5c9ff;
 }
 
 .white {
-    color : #ffffff;
-    border-left : solid white 2px;
+    color: #ffffff;
+    border-left: solid white 2px;
     padding-left: 5px;
 }
 
@@ -232,7 +246,7 @@ p {
 img.identite {
     width: 160px;
     display: block;
-    margin: -65px 10px 0 auto;
+    margin: -70px 10px 0 auto;
     border-radius: 50%;
 }
 
@@ -260,7 +274,7 @@ div.icons img {
     max-width: 1.5rem;
     position: relative;
     top: 1px;
-/*     filter: drop-shadow(1px 1px 1px #00000040); */
+    /*     filter: drop-shadow(1px 1px 1px #00000040); */
     margin-right: 3px;
 }
 
@@ -278,11 +292,15 @@ div.comp img {
     size: A4;
     margin: 0;
 }
+
 @media print {
-    html, body {
+
+    html,
+    body {
         width: 210mm;
-        height: 297mm;        
+        height: 297mm;
     }
+
     .page {
         margin: 0;
         border: initial;
@@ -294,8 +312,7 @@ div.comp img {
         page-break-after: always;
     }
 
-    .waves > svg {
+    .waves>svg {
         border-top-left-radius: 0px;
     }
 }
-
